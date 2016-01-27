@@ -82,12 +82,12 @@
                 <View
                     android:id="@+id/view3"
                     android:layout_width="match_parent"
-                    android:layout_height="15dp"
+                    android:layout_height="10dp"
                     android:background="#F7F7F7" />
             </LinearLayout>
             
             <include android:id="@+id/gools_listview"
-                layout="@layout/gools_listview"/>
+                	 layout="@layout/gools_listview"/>
         </LinearLayout>
     </ScrollView>
 
