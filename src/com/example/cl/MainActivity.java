@@ -7,11 +7,14 @@ import com.example.Fragment.MapFragment;
 import com.example.Fragment.MineFragment;
 import com.xinbo.utils.TextViewUtils;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.TextView;
 
 
@@ -40,7 +43,7 @@ public class MainActivity extends FragmentActivity {
 		textView.setText(title);
 		TextViewUtils.setTextDrawable(this, drawableRes, textView);
 		mTabHost.addTab(mTabHost.newTabSpec(title).setIndicator(tabItem1), fragmentClass, null);
-
+		
 	}
    
 }

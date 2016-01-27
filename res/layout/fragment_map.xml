@@ -1,34 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    
-    tools:context="com.example.Fragment.MapFragment" >
+    android:layout_height="match_parent" >
 
-	<RelativeLayout
-        android:id="@+id/relativeLayout1"
+    <me.maxwin.view.XListView
+        android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@drawable/my_login_bg" >
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="每日图集"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#E61A5F"
-            android:textSize="20sp" />
-    </RelativeLayout>
-
-	<GridView
-	    android:id="@+id/gridView1"
-	    android:layout_width="match_parent"
-	    android:layout_height="match_parent"
-	    android:layout_below="@+id/relativeLayout1"
-	    android:numColumns="2" >
-	</GridView>
+        android:layout_height="match_parent"
+        android:fastScrollEnabled="true"
+        android:scrollbars="vertical" />
 
 </RelativeLayout>
