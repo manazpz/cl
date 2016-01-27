@@ -30,8 +30,8 @@ public class MainActivity extends FragmentActivity {
         addTab("首页", R.drawable.ic_tab_albums, HomeFragment.class);
 		addTab("分类", R.drawable.ic_tab_fenlei, ClassifyFragment.class);
 		addTab("图集", R.drawable.ic_tab_tuji, MapFragment.class);
-		addTab("发现", R.drawable.ic_tab_faxian, FindFragment.class);
 		addTab("我的", R.drawable.ic_tab_songs, MineFragment.class);
+		addTab("发现", R.drawable.ic_tab_faxian, FindFragment.class);
     }
 	
 	private void addTab(String title, int drawableRes, Class fragmentClass) {
