@@ -1,0 +1,42 @@
+<resources>
+    
+    <style name="prtHeaderText">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    
+    <style name="bigCommentRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">14.0dip</item>
+        <item name="android:progressDrawable">@drawable/big_ratingbar_full</item>
+        <item name="android:minHeight">14.0dip</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+    
+    <style name="left_back_img_style">
+        <item name="android:background">@drawable/imageview_btn_selector</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:src">@drawable/icon_back</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>

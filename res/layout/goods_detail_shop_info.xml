@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10.0dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:text="商家信息"
+                android:textColor="@color/textColor_32"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_more_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/list_view_item_click"
+                android:drawablePadding="5.0dip"
+                android:drawableRight="@drawable/icon_right_arrow"
+                android:gravity="center"
+                android:textColor="@color/orange"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@color/bg_common_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_shop_detail"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/list_view_item_bg_selector"
+                android:orientation="vertical"
+                android:paddingBottom="10.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_shop_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5.0dip"
+                            android:gravity="top"
+                            android:text="小样娱乐"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5.0dip"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/tv_shop_address"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginBottom="5.0dip"
+                                android:layout_marginRight="0.0dip"
+                                android:layout_weight="1.0"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="福建厦门集美区银江路万达广场2号门金"
+                                android:textColor="#ff959595"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <ImageView
+                                android:layout_width="15.0dip"
+                                android:layout_height="15.0dip"
+                                android:layout_marginRight="5.0dip"
+                                android:layout_marginTop="3.0dip"
+                                android:background="@drawable/ic_deadline_info" />
+
+                            <TextView
+                                android:id="@+id/tv_goodsdetail_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="营业时间：12：00-次日07:00"
+                                android:textColor="@color/color_ac"
+                                android:textSize="15.0sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_shop_distance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5.0dip"
+                            android:visibility="visible" >
+
+                            <TextView
+                                android:id="@+id/tv_shop_distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|right"
+                                android:layout_marginRight="10.0dip"
+                                android:drawableLeft="@drawable/icon_distance"
+                                android:drawablePadding="5.0dip"
+                                android:gravity="left"
+                                android:textColor="#ff959595"
+                                android:textSize="15sp" />
+
+                            <View
+                                android:id="@+id/iv_nearby_shop_divider"
+                                android:layout_width="1.0dip"
+                                android:layout_height="15.0dip"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/goods_detail_divider_color" />
+
+                            <TextView
+                                android:id="@+id/tv_near_by"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:maxHeight="25.0dip"
+                                android:padding="3.0dip"
+                                android:text="离我最近"
+                                android:textColor="@color/near_by_shop_color"
+                                android:visibility="visible" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/divider_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_call_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/list_view_item_bg_selector"
+                android:gravity="center"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_phone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        
+    </LinearLayout>
+
+</RelativeLayout>

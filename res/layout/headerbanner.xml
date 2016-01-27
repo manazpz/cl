@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/layouthot"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:text="热卖商品"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    </RelativeLayout>
+    
+     <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" 
+            android:layout_below="@+id/layouthot"
+            android:background="#F7F7F7"/>
+     
+     
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_below="@+id/layouthot"
+        android:layout_width="match_parent"
+        android:layout_height="170dp" >
+    </android.support.v7.widget.RecyclerView>
+    
+    
+    <View
+         android:id="@+id/view2"
+         android:layout_width="match_parent"
+         android:layout_height="15dp" 
+         android:background="#F7F7F7"
+         android:layout_below="@+id/recyclerView1"/>
+
+</RelativeLayout>

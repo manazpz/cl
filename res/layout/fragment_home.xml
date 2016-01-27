@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Fragment.HomeFragment" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/my_login_bg" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="柔之帘布艺墙纸"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#E61A5F"
+            android:textSize="20sp" />
+    </RelativeLayout>
+	<ScrollView 
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="#F7F7F7" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="#ffffff"
+                    android:padding="3dp" >
+                </android.support.v4.view.ViewPager>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="#F7F7F7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout1"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#F7F7F7" />
+
+                <include
+                    android:id="@+id/headerbanner"
+                    layout="@layout/headerbanner" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="#F7F7F7" />
+            </LinearLayout>
+            
+            <include android:id="@+id/gools_listview"
+                layout="@layout/gools_listview"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
