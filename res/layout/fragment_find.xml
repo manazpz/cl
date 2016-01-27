@@ -6,17 +6,52 @@
     android:background="#ececec"
     android:orientation="vertical"
     tools:context="com.example.Fragment.FindFragment" >
-
-    <!-- TODO: Update blank fragment layout -->
-    <View 
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
-        />
+        android:layout_height="60dp"
+        android:background="@drawable/my_login_bg" >
+
+        <TextView
+            android:id="@+id/tv_tital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="发现"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:maxWidth="200dp"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginBottom="5.0dip"
+        android:background="@color/app_gray"
+        android:scrollbars="none" >
+        
+      <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common_divider_height"
+                android:layout_marginTop="@dimen/common_divider_height"
+                android:background="@color/app_gray"
+                android:orientation="vertical" >
+
     <RelativeLayout 
         android:id="@+id/rl_Gools"
         android:background="#fff"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="5dp">
 
         <ImageView
             android:id="@+id/imageView1"
@@ -33,7 +68,9 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/imageView1"
-            android:text="商品圈" />
+            android:text="商品圈" 
+            android:textColor="@color/textColor_32"
+            android:textSize="@dimen/section_text_size"/>
     </RelativeLayout>
     
     <View 
@@ -44,7 +81,8 @@
         android:id="@+id/rl_Activity"
         android:background="#fff"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="5dp">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -61,7 +99,9 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/imageView2"
-            android:text="活动" />
+            android:text="活动" 
+            android:textColor="@color/textColor_32"
+            android:textSize="@dimen/section_text_size"/>
     </RelativeLayout>
     
     
@@ -74,7 +114,8 @@
         android:id="@+id/rl_Ditu"
         android:background="#fff"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="5dp">
 
         <ImageView
             android:id="@+id/imageView5"
@@ -91,18 +132,26 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/imageView5"
-            android:text="位置" />
+            android:text="我的位置" 
+            android:textColor="@color/textColor_32"
+            android:textSize="@dimen/section_text_size"/>
     </RelativeLayout>
+     </LinearLayout>
+     
+     <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common_divider_height"
+                android:layout_marginTop="@dimen/common_divider_height"
+                android:background="@color/app_gray"
+                android:orientation="vertical" >        
     
-    <View 
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        />
 	<RelativeLayout 
         android:id="@+id/rl_zxing"
         android:background="#fff"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="5dp">
 
         <ImageView
             android:id="@+id/imageView3"
@@ -119,7 +168,9 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/imageView3"
-            android:text="扫一扫" />
+            android:text="扫一扫" 
+            android:textColor="@color/textColor_32"
+            android:textSize="@dimen/section_text_size"/>
     </RelativeLayout>
     
 	<View 
@@ -130,7 +181,8 @@
         android:id="@+id/rl_Kefu"
         android:background="#fff"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="5dp">
 
         <ImageView
             android:id="@+id/imageView4"
@@ -147,7 +199,18 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/imageView4"
-            android:text="客服" />
+            android:text="客服" 
+            android:textColor="@color/textColor_32"
+            android:textSize="@dimen/section_text_size"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2.0dip"
+            android:layout_toRightOf="@id/textView4"
+            android:text="(8:00-22:00)"
+            android:textColor="@color/textColor_a0"
+            android:textSize="14.0sp" />
 
         <TextView
             android:id="@+id/textView7"
@@ -165,10 +228,11 @@
         android:layout_height="10dp"
         />
 	<RelativeLayout 
-        android:id="@+id/rl_Files"
+        android:id="@+id/rl_Clean"
         android:background="#fff"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="5dp">
 
         <ImageView
             android:id="@+id/imageView6"
@@ -178,6 +242,16 @@
             android:layout_alignParentTop="true"
             android:src="@android:drawable/ic_menu_save"
             android:padding="3dp" />
+        <TextView
+            android:id="@+id/cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:text=""
+            android:textColor="@color/textColor_a0"
+            android:textSize="17.0sp" />
 
         <TextView
             android:id="@+id/textView6"
@@ -185,9 +259,47 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/imageView6"
-            android:text="文件夹" />
+            android:text="清除缓存" 
+            android:textColor="@color/textColor_32"
+            android:textSize="@dimen/section_text_size"/>
     </RelativeLayout>
+    </LinearLayout>
 
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical" >
 	
+      <RelativeLayout 
+        android:id="@+id/rl_Files"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@android:drawable/ic_menu_save"
+            android:padding="3dp" />
+        
+
+        <TextView
+            android:id="@+id/tv_myfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView7"
+            android:text="我的文件" 
+            android:textColor="@color/textColor_32"
+            android:textSize="@dimen/section_text_size"/>
+    </RelativeLayout>
+     </LinearLayout>
+
+  </LinearLayout>
+ </ScrollView>
 	
 </LinearLayout>
