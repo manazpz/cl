@@ -75,6 +75,14 @@ public class Util {
 			"地毯",
 			"硅藻泥",
 	};
+	public static final String[] TITALMSG = {
+			"窗帘精品",
+			"墙纸精品",
+			"墙布精品",
+			"软包精品",
+			"地毯精品",
+			"硅藻泥精品",
+	};
 	public static final int[] QZIMG = {
 			R.drawable.ic_life,
 			R.drawable.ic_life,
