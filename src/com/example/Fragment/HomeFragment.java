@@ -18,6 +18,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -65,8 +67,20 @@ public class HomeFragment extends Fragment {
 
 	private void initGL(View layout) {
 		ListView gools_list = (ListView) layout.findViewById(R.id.gools_listview).findViewById(R.id.gools_list);
+		gools_list.setOnItemClickListener(itemclick());
 		goolsadapter = new GoolsAdapter();
 		gools_list.setAdapter(goolsadapter);
+	}
+
+	private OnItemClickListener itemclick() {
+		return new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				startActivity(new Intent(getActivity(), com.example.cl.DetailActivity.class));
+			}
+		};
 	}
 
 	private void initRV(View layout) {
