@@ -3,7 +3,9 @@ package com.example.Fragment;
 import java.util.ArrayList;
 import java.util.List;
 import com.example.cl.ClActivity;
+import com.example.cl.DetailActivity;
 import com.example.cl.R;
+import com.example.util.Constants;
 import com.example.util.Util;
 import android.content.Intent;
 import android.os.Bundle;
@@ -97,9 +99,11 @@ public class HomeFragment extends Fragment {
 			@Override
 			public void onItemClick(View view, int position) {
 				//监听recycleview
-				if (position == 0) {
-					startActivity(new Intent(getContext(), ClActivity.class));
-				}
+//				Intent intent = new Intent(getActivity(),ClActivity.class);
+//				intent.putExtra(Constants.KEY.QZ_REQUEST, position);
+//				startActivity(intent);
+				startActivity(new Intent(getContext(), DetailActivity.class));
+				
 			}
 		});
 	}
